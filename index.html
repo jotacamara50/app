@@ -449,7 +449,8 @@
                     appContainer.classList.remove('hidden');
                     footer.classList.remove('hidden');
 
-                    if (pageName === 'login') {
+                    // CORREÇÃO: Esconde o cabeçalho principal também na página de cadastro
+                    if (pageName === 'login' || pageName === 'signup') {
                         appHeader.classList.add('hidden');
                     } else {
                         appHeader.classList.remove('hidden');
